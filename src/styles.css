@@ -1,1 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    height: 100%;
+}
+body {
+    background-image: url('./assets/images/woodBg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.main .wine-title h1{
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    right: 40%;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.carousel {
+    height: 100vh !important;
+}
+.carousel .carousel-item {
+    height: 25vh !important;
+    width: 25vw !important;
+    top: -130px !important;
+}
+.carousel .carousel-item h2,p {
+    font-size: 1rem;
+}
+.carousel .wine h2{ 
+    color: #fff!important;
+    font-size: 1.2rem;
+}
+.carousel .wine p{
+    color: #fff!important;
+    font-size: 1rem;
+}
+.text-white{
+    color: #fff;
+}
+.menu-bt img{
+    width: 40px;
+    margin: 10px 0 -30px 10px;
+}
+
+.modal{
+    max-height: 100% !important;
+    width: 92% !important;
+    height: 80vh !important;
+    background-color: #EFEBE9;
+}
+.wine-content button{
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+}
+.wine-country{
+    z-index: -999;
+    width: 600px;
+    position: absolute;
+    left: 36%;
+    top: 44%;
+}
+.wine-content .wine-description h1, h2, p{
+    color: #795548;
+}
+.wine-content .wine-description h1{
+    font-size: 2rem;
+}
+.wine-content .wine-description h2{
+    font-size: 1.5rem;
+}
+.wine-content .wine-description p{
+    font-size: 1rem;
+}
+.side-nav{
+    background-color: #4c0834 !important;
+}
+.side-nav .title{
+    text-align: center;
+}
+.side-nav .title h2 {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.side-nav .in-menu .collapsible-header h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.side-nav .in-menu .collapsible-body{
+    background-color: #5e0940;
+}
+.side-nav .in-menu .collapsible-body a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}

@@ -1,0 +1,50 @@
+<div class="wine-title">
+  <h1>Destaques</h1>
+</div>
+<div materialize="carousel" [materializeParams]="[{padding: 150}]" class="carousel center">
+<a *ngFor="let feature of FeatureData" class="modal-trigger carousel-item wine " (tap)="openModal()">
+  <img src="assets/images/vinho.png">
+  <h2>{{feature.name}}</h2>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+</a>
+</div>
+<div id="modal1" class="modal" materialize="modal" [materializeActions]="modalActions">
+<div class="modal-content wine-content">
+  <img class="wine-country" src="assets/images/eua.png" alt="estados unidos">
+  <button class="btn-floating btn-large waves-effect brown modal-close">></button>
+  <div class="wine-description col s12">
+      <h1 class="wine-type">Cabernet</h1>
+      <h2 class="wine-name">Lorem ipsum dolor, sit amet consectetur adipisici</h2>
+      <p class="wine-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div class="wine-main row">
+    <div class="wine-image col s4">
+      <img src="assets/images/vinho.png" alt="vinho">
+    </div>
+      <div class="wine-atr empresa col s4">
+        <h2>Empresa</h2>
+        <p>Wines & Vibes</p>
+      </div>
+      <div class="wine-atr pais col s4">
+        <h2>País</h2>
+        <p>Estados unidos of america</p>
+      </div>
+      <div class="wine-atr safra col s4">
+        <h2>Safra</h2>
+        <p>2025</p>
+      </div>
+      <div class="wine-atr regiao col s4">
+        <h2>Região</h2>
+        <p>Terra dos gringo</p>
+      </div>
+      <div class="wine-atr teor col s4">
+        <h2>Teor</h2>
+        <p>20<span>%</span></p>
+      </div>
+      <div class="wine-atr aromas col s4">
+        <h2>Aromas</h2>
+        <p>Uva</p>
+      </div>
+  </div>
+</div>
+</div>
